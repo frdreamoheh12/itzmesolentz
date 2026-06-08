@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@itzzmesolentz_ | 𝙳𝙴𝚅 • SolentzNvrDie</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(circle at top left,#2b1055 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#0f3460 0%,transparent 30%),
+    #050505;
+    color:white;
+    overflow-x:hidden;
+}
+
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#050505}
+::-webkit-scrollbar-thumb{
+    background:#9d4edd;
+    border-radius:20px;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:rgba(5,5,8,.75);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.nav-container{
+    width:92%;
+    max-width:1300px;
+    margin:auto;
+    padding:15px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-weight:900;
+    letter-spacing:1px;
+    font-size:1.1rem;
+}
+
+.logo span{
+    color:#c77dff;
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#ddd;
+    text-decoration:none;
+    font-size:.82rem;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#c77dff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:120px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:45px;
+    align-items:center;
+}
+
+.avatar-box{
+    width:190px;
+    height:190px;
+    border-radius:30px;
+    padding:8px;
+    background:linear-gradient(135deg,#c77dff,#3c096c,#111);
+    box-shadow:0 0 45px rgba(199,125,255,.35);
+}
+
+.avatar{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:24px;
+    border:2px solid rgba(255,255,255,.5);
+}
+
+.tag{
+    margin-top:25px;
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:50px;
+    background:rgba(199,125,255,.12);
+    border:1px solid rgba(199,125,255,.35);
+    color:#e0aaff;
+    font-size:.8rem;
+    font-weight:700;
+}
+
+.name{
+    margin-top:18px;
+    font-size:3.5rem;
+    font-weight:900;
+    line-height:1.1;
+}
+
+.name span{
+    color:#c77dff;
+    text-shadow:0 0 25px rgba(199,125,255,.7);
+}
+
+.role{
+    margin-top:12px;
+    color:#cfcfcf;
+    font-weight:600;
+}
+
+.desc{
+    margin-top:22px;
+    max-width:570px;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:.95rem;
+}
+
+.buttons{
+    margin-top:28px;
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:13px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:800;
+    font-size:.85rem;
+    transition:.3s;
+}
+
+.btn-main{
+    background:#c77dff;
+    color:#050505;
+    box-shadow:0 0 25px rgba(199,125,255,.45);
+}
+
+.btn-main:hover{
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+    background:rgba(255,255,255,.05);
+}
+
+.stats-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(22px);
+    border-radius:28px;
+    padding:35px;
+    box-shadow:0 0 45px rgba(0,0,0,.35);
+}
+
+.stats-card h2{
+    font-size:1.7rem;
+    margin-bottom:15px;
+}
+
+.stats-card p{
+    color:#bdbdbd;
+    line-height:1.7;
+}
+
+.stat-row{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.stat{
+    padding:18px;
+    border-radius:18px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    text-align:center;
+}
+
+.stat h3{
+    color:#c77dff;
+    font-size:1.8rem;
+}
+
+.stat p{
+    font-size:.8rem;
+}
+
+section{
+    padding:90px 0;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.title{
+    text-align:center;
+    font-size:2.4rem;
+    font-weight:900;
+    margin-bottom:45px;
+}
+
+.title span{
+    color:#c77dff;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:28px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    border-color:#c77dff;
+    box-shadow:0 0 30px rgba(199,125,255,.18);
+}
+
+.card h3{
+    margin-bottom:12px;
+    font-size:1.2rem;
+}
+
+.card p{
+    color:#bdbdbd;
+    line-height:1.75;
+    font-size:.9rem;
+}
+
+.price{
+    font-size:1.8rem;
+    color:#c77dff;
+    font-weight:900;
+    margin:12px 0;
+}
+
+.contact-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:28px;
+    padding:45px;
+}
+
+.contact-box p{
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.contact-info{
+    margin-top:28px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.contact-item{
+    padding:14px 22px;
+    border-radius:15px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.contact-item strong{
+    color:#c77dff;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#888;
+    background:#030303;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+@media(max-width:900px){
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .avatar-box{
+        margin:auto;
+    }
+
+    .desc{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .nav-container{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .name{
+        font-size:2.4rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">SOLENTZ<span>NVRDIE</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-grid">
+
+            <div>
+                <div class="avatar-box">
+                    <img src="https://cdn.discordapp.com/attachments/1511265664701169755/1513571920963178668/d7e5c63cbc006d18f639ba24da6d7299.jpg?ex=6a283732&is=6a26e5b2&hm=b814f9e45958bc472bd34a0c4fb224b5757c49d09a96897d2fcf123a252b6804&" class="avatar" alt="Solentz Logo">
+                </div>
+
+                <div class="tag">Minecraft Network Developer</div>
+
+                <h1 class="name">@itzzme<span>solentz_</span></h1>
+
+                <p class="role">𝙳𝙴𝚅 • SolentzNvrDie</p>
+
+                <p class="desc">
+                    I create clean, optimized, and professional Minecraft server setups.
+                    From menus, ranks, crates, permissions, economy, and backend systems
+                    to complete network management, I focus on quality and smooth player experience.
+                </p>
+
+                <div class="buttons">
+                    <a href="#packages" class="btn btn-main">View Packages</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <h2>Premium Development</h2>
+                <p>
+                    Professional Minecraft development with clean configs,
+                    stable performance, premium design, and scalable server systems.
+                </p>
+
+                <div class="stat-row">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Servers Worked</p>
+                    </div>
+                    <div class="stat">
+                        <h3>8</h3>
+                        <p>Packages</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Support Focus</p>
+                    </div>
+                    <div class="stat">
+                        <h3>PRO</h3>
+                        <p>Configs</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h1 class="title">Core <span>Skills</span></h1>
+
+        <div class="grid">
+            <div class="card">
+                <h3>⚙️ Server Development</h3>
+                <p>
+                    Full Minecraft server setups including ranks, kits, warps,
+                    crates, economy, scoreboards, tablist, menus, and gameplay systems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Optimization</h3>
+                <p>
+                    Performance-focused configs for smoother gameplay,
+                    better TPS, reduced lag, and clean backend management.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Network Setup</h3>
+                <p>
+                    Proxy setup, lobby systems, backend server linking,
+                    permission structure, and scalable server ecosystem.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h1 class="title">Server <span>Experience</span></h1>
+
+        <div class="grid">
+            <div class="card">
+                <h3>☠️ ReaperMC</h3>
+                <p>Server systems, optimization, professional configs, gameplay setup, and backend improvements.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 TieNetwork</h3>
+                <p>Network setup, economy systems, GUI menus, ranks, store support, and performance tuning.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ VeltrixMC</h3>
+                <p>Premium configuration work, server balancing, gameplay features, and infrastructure setup.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 FireMC Season 5</h3>
+                <p>Server optimization, custom features, event setup, maintenance, and clean gameplay systems.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏹 HunterMC</h3>
+                <p>Advanced configuration, economy setup, backend work, and gameplay improvement systems.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="packages">
+    <div class="container">
+        <h1 class="title">Development <span>Packages</span></h1>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>🌱 Dirt Plan</h3>
+                <div class="price">$20</div>
+                <p>• Basic configs<br>• Small edits<br>• Learning stage<br><br>⏰ Time: 1 Day</p>
+            </div>
+
+            <div class="card">
+                <h3>🪵 Wooden Plan</h3>
+                <div class="price">$50</div>
+                <p>• Simple setups<br>• Basic menu/config work<br>• Minor bug fixes<br><br>⏰ Time: 2 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>🪨 Stone Plan</h3>
+                <div class="price">$80</div>
+                <p>• Stable configurations<br>• Custom menus & setups<br>• Medium experience<br><br>⏰ Time: 4 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>⚔️ Iron Plan</h3>
+                <div class="price">$120</div>
+                <p>• Advanced systems<br>• Optimized configs<br>• Professional setups<br><br>⏰ Time: 5 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>🏆 Gold Plan</h3>
+                <div class="price">$150</div>
+                <p>• Premium quality builds<br>• Clean design & balance<br>• Experienced developer<br><br>⏰ Time: 7 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>💎 Diamond Plan</h3>
+                <div class="price">$200</div>
+                <p>• High-end development<br>• Large server systems<br>• Custom mechanics/configs<br><br>⏰ Time: 12 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Netherite Plan</h3>
+                <div class="price">$350</div>
+                <p>• Top-tier developer<br>• Enterprise quality setups<br>• Fully optimized & scalable<br><br>⏰ Time: 15 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>🖤 Bedrock Plan</h3>
+                <div class="price">$600</div>
+                <p>• Server infrastructure<br>• Network design<br>• Full ecosystem management<br><br>⏰ Time: 3 Weeks</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="contact-box">
+            <h1 class="title">Contact <span>Me</span></h1>
+
+            <p>
+                Available for Minecraft server development, optimization,
+                custom setups, configurations, menus, ranks, and full network management.
+            </p>
+
+            <div class="contact-info">
+                <div class="contact-item">💬 Discord: <strong>@itzzmesolentz_</strong></div>
+                <div class="contact-item">⚡ Status: <strong>Open For Work</strong></div>
+                <div class="contact-item">🛠️ Role: <strong>𝙳𝙴𝚅 • SolentzNvrDie</strong></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 @itzzmesolentz_ • 𝙳𝙴𝚅 • SolentzNvrDie
+</footer>
+
+</body>
+</html>
